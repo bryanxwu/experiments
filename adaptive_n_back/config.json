@@ -5,20 +5,20 @@
         "cognitive_atlas_task_id": "trm_56674133b666c",
         "template":"jspsych",
         "run": [
-                "static/js/math.min.js",
-                "static/js/jspsych/jspsych.js",
-                "static/js/jspsych/plugins/jspsych-text.js",
-                "static/js/jspsych/poldrack_plugins/jspsych-poldrack-text.js",
-                "static/js/jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
-                "static/js/jspsych/poldrack_plugins/jspsych-attention-check.js",
-                "static/js/jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
-                "static/js/jspsych/poldrack_plugins/jspsych-poldrack-categorize.js",
-                "static/js/jspsych/plugins/jspsych-survey-text.js",
-                "static/js/jspsych/plugins/jspsych-call-function.js",
-                "static/js/utils/poldrack_utils.js",
+                "https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.4.1/math.min.js",
+                "jspsych/jspsych.js",
+                "jspsych/plugins/jspsych-text.js",
+                "jspsych/poldrack_plugins/jspsych-poldrack-text.js",
+                "jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
+                "jspsych/poldrack_plugins/jspsych-attention-check.js",
+                "jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
+                "jspsych/poldrack_plugins/jspsych-poldrack-categorize.js",
+                "jspsych/plugins/jspsych-survey-text.js",
+                "jspsych/plugins/jspsych-call-function.js",
+                "jspsych/poldrack_plugins/poldrack_utils.js",
                 "experiment.js",
-                "static/css/jspsych.css",
-                "static/css/default_style.css",
+                "jspsych.css",
+                "default_style.css",
                 "style.css"
                 ],
         "contributors": [
@@ -45,5 +45,3 @@
                        }
    }
 ]
-
-
