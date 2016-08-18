@@ -1,0 +1,52 @@
+[
+    {
+        "cognitive_atlas_task_id": "trm_4cacf3fbc503b",
+        "contributors": [
+            "Ian Eisenberg",
+            "Zeynep Enkavi",
+            "Patrick Bissett",
+            "Vanessa Sochat",
+            "Russell Poldrack"
+        ],
+        "deployment_variables": {
+            "jspsych_init": {
+                "display_element": "getDisplayElement",
+                "fullscreen": true,
+                "on_trial_finish": "addID('motor_selective_stop_signal')"
+            }
+        },
+        "exp_id": "motor_selective_stop_signal",
+        "experiment_variables": [
+            {
+                "datatype": "boolean",
+                "description": "True if avg_rt > 200",
+                "name": "credit_var",
+                "type": "credit"
+            }
+        ],
+        "name": "Motor-Selective-Stop-Signal",
+        "notes": "",
+        "publish": "True",
+        "reference": "http://www.jneurosci.org/content/27/14/3743.short",
+        "run": [
+            "https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.4.1/math.min.js",
+            "jspsych/jspsych.js",
+            "jspsych/plugins/jspsych-text.js",
+            "jspsych/plugins/jspsych-call-function.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
+            "jspsych/poldrack_plugins/jspsych-attention-check.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-categorize.js",
+            "jspsych/poldrack_plugins/poldrack_utils.js",
+            "experiment.js",
+            "jspsych/poldrack_plugins/jspsych-stop-signal.js",
+            "jspsych/plugins/jspsych-survey-text.js",
+            "jspsych.css",
+            "default_style.css",
+            "style.css"
+        ],
+        "template": "jspsych",
+        "time": 22
+    }
+]

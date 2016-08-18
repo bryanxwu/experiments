@@ -1,0 +1,40 @@
+[
+    {
+        "cognitive_atlas_task_id": "trm_4c8a85c5c75eb",
+        "contributors": [
+            "Ian Eisenberg",
+            "Zeynep Enkavi",
+            "Patrick Bissett",
+            "Vanessa Sochat",
+            "Russell Poldrack"
+        ],
+        "deployment_variables": {
+            "jspsych_init": {
+                "display_element": "getDisplayElement",
+                "fullscreen": true,
+                "on_trial_finish": "addID('writing_task')"
+            }
+        },
+        "exp_id": "writing_task",
+        "name": "Writing Task",
+        "publish": "True",
+        "reference": "",
+        "run": [
+            "jspsych/jspsych.js",
+            "jspsych/plugins/jspsych-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
+            "jspsych/poldrack_plugins/jspsych-attention-check.js",
+            "jspsych/poldrack_plugins/jspsych-writing.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
+            "jspsych/plugins/jspsych-survey-text.js",
+            "jspsych/poldrack_plugins/poldrack_utils.js",
+            "experiment.js",
+            "jspsych.css",
+            "default_style.css",
+            "style.css"
+        ],
+        "template": "jspsych",
+        "time": 5
+    }
+]

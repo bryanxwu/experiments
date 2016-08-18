@@ -1,0 +1,50 @@
+[
+    {
+        "cognitive_atlas_task_id": "trm_56674987c8f0c",
+        "contributors": [
+            "Jamie Li",
+            "Ian Eisenberg",
+            "Zeynep Enkavi",
+            "Patrick Bissett",
+            "Vanessa Sochat",
+            "Russell Poldrack"
+        ],
+        "deployment_variables": {
+            "jspsych_init": {
+                "display_element": "getDisplayElement",
+                "fullscreen": true,
+                "on_trial_finish": "addID('recent_probes')"
+            }
+        },
+        "exp_id": "recent_probes",
+        "experiment_variables": [
+            {
+                "datatype": "boolean",
+                "description": "True if avg_rt > 200",
+                "name": "credit_var",
+                "type": "credit"
+            }
+        ],
+        "name": "Recent Probes",
+        "publish": "True",
+        "reference": "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2206737/",
+        "run": [
+            "https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.4.1/math.min.js",
+            "jspsych/jspsych.js",
+            "jspsych/plugins/jspsych-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-categorize.js",
+            "jspsych/poldrack_plugins/jspsych-attention-check.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
+            "jspsych/plugins/jspsych-survey-text.js",
+            "jspsych/poldrack_plugins/poldrack_utils.js",
+            "experiment.js",
+            "jspsych.css",
+            "default_style.css",
+            "style.css"
+        ],
+        "template": "jspsych",
+        "time": 22
+    }
+]

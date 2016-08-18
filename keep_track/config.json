@@ -1,0 +1,40 @@
+[
+    {
+        "cognitive_atlas_task_id": "trm_4c40d4054f38b",
+        "contributors": [
+            "Ian Eisenberg",
+            "Zeynep Enkavi",
+            "Patrick Bissett",
+            "Vanessa Sochat",
+            "Russell Poldrack"
+        ],
+        "deployment_variables": {
+            "jspsych_init": {
+                "display_element": "getDisplayElement",
+                "fullscreen": true,
+                "on_trial_finish": "addID('keep_track')"
+            }
+        },
+        "exp_id": "keep_track",
+        "name": "Keep Track Experiment",
+        "notes": "Condition indicates difficulty as quantified by the 'target length': the number of categories the subject had to remember",
+        "publish": "True",
+        "reference": "http://www.sciencedirect.com/science/article/pii/S001002859990734X",
+        "run": [
+            "jspsych/jspsych.js",
+            "jspsych/plugins/jspsych-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
+            "jspsych/poldrack_plugins/jspsych-attention-check.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
+            "jspsych/plugins/jspsych-survey-text.js",
+            "jspsych/poldrack_plugins/poldrack_utils.js",
+            "experiment.js",
+            "jspsych.css",
+            "default_style.css",
+            "style.css"
+        ],
+        "template": "jspsych",
+        "time": 6
+    }
+]

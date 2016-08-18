@@ -1,0 +1,50 @@
+[
+    {
+        "cognitive_atlas_task_id": "trm_551f0857e1db8",
+        "contributors": [
+            "Ian Eisenberg",
+            "Zeynep Enkavi",
+            "Patrick Bissett",
+            "Vanessa Sochat",
+            "Russell Poldrack"
+        ],
+        "deployment_variables": {
+            "jspsych_init": {
+                "display_element": "getDisplayElement",
+                "fullscreen": true,
+                "on_trial_finish": "addID('attention_network_task')"
+            }
+        },
+        "exp_id": "attention_network_task",
+        "experiment_variables": [
+            {
+                "datatype": "boolean",
+                "description": "True if avg_rt > 200",
+                "name": "credit_var",
+                "type": "credit"
+            }
+        ],
+        "name": "Attention Network Task",
+        "publish": "True",
+        "reference": "http://www.mitpressjournals.org/doi/pdf/10.1162/089892902317361886",
+        "run": [
+            "https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.4.1/math.min.js",
+            "jspsych/jspsych.js",
+            "jspsych/plugins/jspsych-text.js",
+            "jspsych/plugins/jspsych-call-function.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
+            "jspsych/poldrack_plugins/jspsych-attention-check.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-categorize.js",
+            "jspsych/plugins/jspsych-survey-text.js",
+            "jspsych/poldrack_plugins/poldrack_utils.js",
+            "experiment.js",
+            "jspsych.css",
+            "default_style.css",
+            "style.css"
+        ],
+        "template": "jspsych",
+        "time": 15
+    }
+]

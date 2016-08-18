@@ -1,0 +1,50 @@
+[
+    {
+        "cognitive_atlas_task_id": "trm_5667483dcc371",
+        "contributors": [
+            "Jamie Li",
+            "Ian Eisenberg",
+            "Zeynep Enkavi",
+            "Patrick Bissett",
+            "Vanessa Sochat",
+            "Russell Poldrack"
+        ],
+        "deployment_variables": {
+            "jspsych_init": {
+                "display_element": "getDisplayElement",
+                "fullscreen": true,
+                "on_trial_finish": "addID('probabilistic_selection')"
+            }
+        },
+        "exp_id": "probabilistic_selection",
+        "experiment_variables": [
+            {
+                "datatype": "boolean",
+                "description": "True if avg_rt > 200",
+                "name": "credit_var",
+                "type": "credit"
+            }
+        ],
+        "name": "Probabilistic Selection Task",
+        "publish": "True",
+        "reference": "http://science.sciencemag.org/content/sci/suppl/2004/12/10/1102941.DC1/Frank.SOM.pdf",
+        "run": [
+            "https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.4.1/math.min.js",
+            "jspsych/jspsych.js",
+            "jspsych/plugins/jspsych-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-categorize.js",
+            "jspsych/poldrack_plugins/jspsych-attention-check.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
+            "jspsych/plugins/jspsych-survey-text.js",
+            "jspsych/poldrack_plugins/poldrack_utils.js",
+            "experiment.js",
+            "jspsych.css",
+            "default_style.css",
+            "style.css"
+        ],
+        "template": "jspsych",
+        "time": 14
+    }
+]

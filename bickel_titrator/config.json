@@ -1,0 +1,49 @@
+[
+    {
+        "cognitive_atlas_task_id": "trm_5696a599bfcb6",
+        "contributors": [
+            "Ian Eisenberg",
+            "Zeynep Enkavi",
+            "Patrick Bissett",
+            "Vanessa Sochat",
+            "Russell Poldrack"
+        ],
+        "deployment_variables": {
+            "jspsych_init": {
+                "display_element": "getDisplayElement",
+                "fullscreen": true,
+                "on_trial_finish": "addID('bickel_titrator')"
+            }
+        },
+        "exp_id": "bickel_titrator",
+        "experiment_variables": [
+            {
+                "datatype": "boolean",
+                "description": "True if avg_rt > 200",
+                "name": "credit_var",
+                "type": "credit"
+            }
+        ],
+        "name": "Adaptive Bickel Titrator",
+        "publish": "True",
+        "reference": "http://psycnet.apa.org/journals/pha/22/3/222.pdf",
+        "run": [
+            "https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.4.1/math.min.js",
+            "jspsych/jspsych.js",
+            "jspsych/plugins/jspsych-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
+            "jspsych/poldrack_plugins/jspsych-attention-check.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
+            "jspsych/plugins/jspsych-call-function.js",
+            "jspsych/plugins/jspsych-survey-text.js",
+            "jspsych/poldrack_plugins/poldrack_utils.js",
+            "experiment.js",
+            "jspsych.css",
+            "default_style.css",
+            "style.css"
+        ],
+        "template": "jspsych",
+        "time": 5
+    }
+]

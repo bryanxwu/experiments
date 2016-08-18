@@ -1,0 +1,57 @@
+[
+    {
+        "cognitive_atlas_task_id": "trm_569989ef8cff4",
+        "contributors": [
+            "Ian Eisenberg",
+            "Zeynep Enkavi",
+            "Patrick Bissett",
+            "Vanessa Sochat",
+            "Russell Poldrack"
+        ],
+        "deployment_variables": {
+            "jspsych_init": {
+                "display_element": "getDisplayElement",
+                "fullscreen": true,
+                "on_trial_finish": "addID('willingness_to_wait')"
+            }
+        },
+        "exp_id": "willingness_to_wait",
+        "experiment_variables": [
+            {
+                "datatype": "numeric",
+                "description": "Money earned during trial. E(bonus) with perfect performance = 300",
+                "name": "performance_var",
+                "range": [
+                    0,
+                    1000
+                ],
+                "type": "bonus"
+            },
+            {
+                "datatype": "boolean",
+                "description": "True if avg_rt > 200",
+                "name": "credit_var",
+                "type": "credit"
+            }
+        ],
+        "name": "Willingness to Wait",
+        "publish": "True",
+        "reference": "http://www.nature.com/neuro/journal/v18/n5/full/nn.3994.html",
+        "run": [
+            "jspsych/jspsych.js",
+            "jspsych/plugins/jspsych-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
+            "jspsych/poldrack_plugins/jspsych-attention-check.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
+            "jspsych/plugins/jspsych-survey-text.js",
+            "jspsych/poldrack_plugins/poldrack_utils.js",
+            "experiment.js",
+            "jspsych.css",
+            "default_style.css",
+            "style.css"
+        ],
+        "template": "jspsych",
+        "time": 11
+    }
+]

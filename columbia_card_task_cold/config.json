@@ -1,0 +1,57 @@
+[
+    {
+        "cognitive_atlas_task_id": "trm_5667492c555b7",
+        "contributors": [
+            "Jamie Li",
+            "Ian Eisenberg",
+            "Zeynep Enkavi",
+            "Patrick Bissett",
+            "Vanessa Sochat",
+            "Russell Poldrack"
+        ],
+        "deployment_variables": {
+            "jspsych_init": {
+                "display_element": "getDisplayElement",
+                "fullscreen": true,
+                "on_trial_finish": "addID('columbia_card_task_cold')"
+            }
+        },
+        "exp_id": "columbia_card_task_cold",
+        "experiment_variables": [
+            {
+                "datatype": "boolean",
+                "description": "True if avg_rt > 200",
+                "name": "credit_var",
+                "type": "credit"
+            },
+            {
+                "datatype": "numeric",
+                "description": "Sum of points from three randomly chosen rounds.",
+                "name": "performance_var",
+                "type": "bonus"
+            }
+        ],
+        "name": "Columbia Card Task Cold Version",
+        "notes": "",
+        "publish": "True",
+        "reference": "http://psycnet.apa.org/journals/xlm/35/3/709.pdf",
+        "run": [
+            "https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.4.1/math.min.js",
+            "jspsych/jspsych.js",
+            "jspsych/plugins/jspsych-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
+            "jspsych/poldrack_plugins/jspsych-single-stim-button.js",
+            "jspsych/plugins/jspsych-call-function.js",
+            "jspsych/plugins/jspsych-survey-text.js",
+            "jspsych/poldrack_plugins/poldrack_utils.js",
+            "experiment.js",
+            "jspsych.css",
+            "default_style.css",
+            "style.css"
+        ],
+        "template": "jspsych",
+        "time": 15
+    }
+]

@@ -1,0 +1,39 @@
+[
+    {
+        "cognitive_atlas_task_id": "trm_569d6eef27433",
+        "contributors": [
+            "Ian Eisenberg",
+            "Zeynep Enkavi",
+            "Patrick Bissett",
+            "Vanessa Sochat",
+            "Russell Poldrack"
+        ],
+        "deployment_variables": {
+            "jspsych_init": {
+                "display_element": "getDisplayElement",
+                "fullscreen": false
+            }
+        },
+        "exp_id": "gm_paradigm",
+        "experiment_variables": "",
+        "name": "Guitart-Masip Learning Paradigm",
+        "notes": "",
+        "publish": "True",
+        "reference": "http://www.sciencedirect.com/science/article/pii/S105381191200420X",
+        "run": [
+            "jspsych/jspsych.js",
+            "jspsych/plugins/jspsych-text.js",
+            "jspsych/plugins/jspsych-call-function.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
+            "jspsych/plugins/jspsych-single-stim.js",
+            "jspsych/poldrack_plugins/jspsych-stop-signal.js",
+            "experiment.js",
+            "jspsych.css",
+            "default_style.css",
+            "style.css"
+        ],
+        "template": "jspsych",
+        "time": 45
+    }
+]

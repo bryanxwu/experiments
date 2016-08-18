@@ -1,0 +1,43 @@
+[
+    {
+        "cognitive_atlas_task_id": "trm_50f73d557c967",
+        "contributors": [
+            "Jamie Li",
+            "Ian Eisenberg",
+            "Zeynep Enkavi",
+            "Patrick Bissett",
+            "Vanessa Sochat",
+            "Russell Poldrack"
+        ],
+        "deployment_variables": {
+            "jspsych_init": {
+                "display_element": "getDisplayElement",
+                "fullscreen": true,
+                "on_trial_finish": "addID('information_sampling_task')"
+            }
+        },
+        "exp_id": "information_sampling_task",
+        "experiment_variables": "",
+        "name": "Information Sampling Task",
+        "notes": "",
+        "publish": "True",
+        "reference": "http://www.sciencedirect.com/science/article/pii/S0006322305013971",
+        "run": [
+            "jspsych/jspsych.js",
+            "jspsych/plugins/jspsych-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-text.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
+            "jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
+            "jspsych/poldrack_plugins/jspsych-single-stim-button.js",
+            "jspsych/plugins/jspsych-call-function.js",
+            "jspsych/plugins/jspsych-survey-text.js",
+            "jspsych/poldrack_plugins/poldrack_utils.js",
+            "experiment.js",
+            "jspsych.css",
+            "default_style.css",
+            "style.css"
+        ],
+        "template": "jspsych",
+        "time": 12
+    }
+]
