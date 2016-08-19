@@ -229,7 +229,7 @@ var credit_var = true
 
 // task specific variables
 // Define and load images
-var prefix = '/static/experiments/motor_selective_stop_signal/images/'
+var prefix = 'images/'
 var images = [prefix + 'circle.png', prefix + 'rhombus.png', prefix + 'Lshape.png', prefix +
   'triangle.png'
 ]

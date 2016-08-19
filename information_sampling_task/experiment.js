@@ -14,7 +14,7 @@ function appendTextAfter(input, search_term, new_text) {
 function appendTextAfter2(input, search_term, new_text) {
 	var index = input.indexOf(search_term) + search_term.length
 	return input.slice(0, index) + new_text + input.slice(index +
-		"'/static/experiments/information_sampling_task/images/grey_small_square.png' onclick = chooseCard(this.id)".length + 5)
+		"'images/grey_small_square.png' onclick = chooseCard(this.id)".length + 5)
 }
 
 var appendTestData = function() {
@@ -74,34 +74,34 @@ var getBoard = function(colors, board_type) {
 				board +=
 					"<div class = square><input type='image' class = 'small_square' id = '" +
 					i +
-					"' src='/static/experiments/information_sampling_task/images/" + whichSmallColor1 +
+					"' src='images/" + whichSmallColor1 +
 					".png'></div>"
 			} else if (color2_index.indexOf(i) != -1) {
 				board +=
 					"<div class = square><input type='image' class = 'small_square' id = '" +
 					i +
-					"' src='/static/experiments/information_sampling_task/images/" + whichSmallColor2 +
+					"' src='images/" + whichSmallColor2 +
 					".png'></div>"
 			}
 		} else {
 			board += "<div class = square><input type='image' class = '" + click_class + "'id = '" +
 				i +
-				"' src='/static/experiments/information_sampling_task/images/grey_small_square.png' onclick = " +
+				"' src='images/grey_small_square.png' onclick = " +
 				click_function + "(this.id)></div>"
 		}
 	}
 	board += "</div><div class = smallbox>"
 	if (board_type == 'instruction') {
 		board +=
-			"<div class = bottomLeft><input type='image' class = 'select-button big_square' id = '26' src='/static/experiments/information_sampling_task/images/" +
+			"<div class = bottomLeft><input type='image' class = 'select-button big_square' id = '26' src='images/" +
 			whichLargeColor1 + ".png' onclick = makeInstructChoice(this.id)></div>" +
-			"<div class = bottomRight><input type='image' class = 'select-button big_square' id = '27' src='/static/experiments/information_sampling_task/images/" +
+			"<div class = bottomRight><input type='image' class = 'select-button big_square' id = '27' src='images/" +
 			whichLargeColor2 + ".png' onclick = makeInstructChoice(this.id)></div></div></div></div>"
 	} else {
 		board +=
-			"<div class = bottomLeft><input type='image' class = 'select-button big_square' id = '26' src='/static/experiments/information_sampling_task/images/" +
+			"<div class = bottomLeft><input type='image' class = 'select-button big_square' id = '26' src='images/" +
 			whichLargeColor1 + ".png' onclick = makeChoice(this.id)></div>" +
-			"<div class = bottomRight><input type='image' class = 'select-button big_square' id = '27' src='/static/experiments/information_sampling_task/images/" +
+			"<div class = bottomRight><input type='image' class = 'select-button big_square' id = '27' src='images/" +
 			whichLargeColor2 + ".png' onclick = makeChoice(this.id)></div></div></div></div>"
 	}
 	return board
@@ -204,10 +204,10 @@ var instructionFunction = function(clicked_id) {
 	currID = parseInt(clicked_id)
 	if (color1_index.indexOf(currID) != -1) {
 		document.getElementById(clicked_id).src =
-			'/static/experiments/information_sampling_task/images/' + whichSmallColor1 + '.png';
+			'images/' + whichSmallColor1 + '.png';
 	} else {
 		document.getElementById(clicked_id).src =
-			'/static/experiments/information_sampling_task/images/' + whichSmallColor2 + '.png';
+			'images/' + whichSmallColor2 + '.png';
 
 	}
 }
@@ -280,7 +280,7 @@ var numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25
 var clickedCards = []
 //preload images
 images = []
-var path = '/static/experiments/information_sampling_task/images/'
+var path = 'images/'
 for (var c = 0; c<colors.length; c++) {
 	images.push(path + colors[c] + '_small_square.png')
 	images.push(path + colors[c] + '_large_square.png')

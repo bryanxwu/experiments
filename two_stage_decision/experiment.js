@@ -312,7 +312,7 @@ var get_feedback = function() {
 		total_score += 1
 		return "<div class = 'decision-top faded' style='background:" + curr_colors[stage + 1] + "; '>" +
 			"<img class = 'decision-stim' src= '" + curr_images[second_selected] + "'></div>" +
-			"<div><img  class = decision-fb src = '/static/experiments/two_stage_decision/images/gold_coin.png'></img></div>"
+			"<div><img  class = decision-fb src = 'images/gold_coin.png'></img></div>"
 	} else {
 		update_FB();
 		FB = 0
@@ -370,21 +370,21 @@ var curr_colors = practice_colors
 //The first two stims are first-stage stims.
 //The next four are second-stage
 var test_images = jsPsych.randomization.repeat(
-	["/static/experiments/two_stage_decision/images/11.png",
-		"/static/experiments/two_stage_decision/images/12.png",
-		"/static/experiments/two_stage_decision/images/13.png",
-		"/static/experiments/two_stage_decision/images/14.png",
-		"/static/experiments/two_stage_decision/images/15.png",
-		"/static/experiments/two_stage_decision/images/16.png",
+	["images/11.png",
+		"images/12.png",
+		"images/13.png",
+		"images/14.png",
+		"images/15.png",
+		"images/16.png",
 	], 1)
 
 var practice_images = jsPsych.randomization.repeat(
-	["/static/experiments/two_stage_decision/images/80.png",
-		"/static/experiments/two_stage_decision/images/81.png",
-		"/static/experiments/two_stage_decision/images/82.png",
-		"/static/experiments/two_stage_decision/images/83.png",
-		"/static/experiments/two_stage_decision/images/84.png",
-		"/static/experiments/two_stage_decision/images/85.png",
+	["images/80.png",
+		"images/81.png",
+		"images/82.png",
+		"images/83.png",
+		"images/84.png",
+		"images/85.png",
 	], 1)
 
 //Preload images

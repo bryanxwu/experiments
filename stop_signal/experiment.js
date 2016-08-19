@@ -198,7 +198,7 @@ var credit_var = true
 
 // task specific variables
 // Define and load images
-var prefix = '/static/experiments/stop_signal/images/'
+var prefix = 'images/'
 var images = [prefix + 'pentagon.png', prefix + 'hourglass.png', prefix + 'tear.png', prefix +
 	'square.png'
 ]

@@ -157,12 +157,12 @@ var eachComboNumSP = SP_trials / 30; /* don't change this line */
 
 
 /* THIS IS TO RANDOMIZE STIMS */
-var stimArray = ["/static/experiments/probabilistic_selection/images/1.png",
-	"/static/experiments/probabilistic_selection/images/2.png",
-	"/static/experiments/probabilistic_selection/images/3.png",
-	"/static/experiments/probabilistic_selection/images/4.png",
-	"/static/experiments/probabilistic_selection/images/5.png",
-	"/static/experiments/probabilistic_selection/images/6.png"
+var stimArray = ["images/1.png",
+	"images/2.png",
+	"images/3.png",
+	"images/4.png",
+	"images/5.png",
+	"images/6.png"
 ];
 jsPsych.pluginAPI.preloadImages(stimArray)
 var randomStimArray = jsPsych.randomization.repeat(stimArray, 1);

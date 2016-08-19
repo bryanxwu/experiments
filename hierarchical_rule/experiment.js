@@ -132,7 +132,7 @@ var performance_var = 0
 var hierarchical_only = true //When this is true, do not run the flat task
 var exp_len = 360 //number of trials per rule-set
 var flat_first =  Math.floor(Math.random())
-var path_source = '/static/experiments/hierarchical_rule/images/'
+var path_source = 'images/'
 var stim_prefix = '<div class = centerbox><div class = stimBox><img class = hierarchicalStim src ='
 var border_prefix = '<img class = hierarchicalBorder src ='
 var prompt_prefix = '<img class = hierarchicalPrompt src ='

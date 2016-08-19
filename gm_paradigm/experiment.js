@@ -404,7 +404,7 @@ var numLearningBlocks = 0
 var numLearningBlocksTotal = 3
 var numTrials = 80
 var currTrial = 0
-var pathSource = '/static/experiments/gm_paradigm/images/'
+var pathSource = 'images/'
 var fileType = '.png'
 var preFileType = "<img class = center src='"
 var forcedChoiceType = "<div class = decision-left><img src='"

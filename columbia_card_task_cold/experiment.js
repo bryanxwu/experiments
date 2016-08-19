@@ -59,14 +59,14 @@ var getBoard = function(board_type) {
 		board = "<div class = cardbox>"
 		for (i = 1; i < 33; i++) {
 		board += "<div class = square><input type='image' class = card_image id = c" + i +
-			" src='/static/experiments/columbia_card_task_cold/images/beforeChosen.png'></div>"
+			" src='images/beforeChosen.png'></div>"
 		}
 		
 	} else {
 		board = "<div class = cardbox2>"
 		for (i = 1; i < 33; i++) {
 		board += "<div class = square><input class = card_image type='image' id = c" + i +
-			" src='/static/experiments/columbia_card_task_cold/images/beforeChosen.png'></div>"
+			" src='images/beforeChosen.png'></div>"
 		}
 	}
 	board += "</div>"
@@ -82,10 +82,10 @@ var getText = function() {
 var turnOneCard = function(whichCard, win) {
 	if (win === 'loss') {
 		document.getElementById("c" + whichCard + "").src =
-			'/static/experiments/columbia_card_task_cold/images/loss.png';
+			'images/loss.png';
 	} else {
 		document.getElementById("c" + whichCard + "").src =
-			'/static/experiments/columbia_card_task_cold/images/chosen.png';
+			'images/chosen.png';
 	}
 }
 
@@ -140,13 +140,13 @@ var instructFunction2 = function() {
 	]
 	var instructTurnCards = function() {
 		document.getElementById("8").src =
-			'/static/experiments/columbia_card_task_cold/images/loss.png';
+			'images/loss.png';
 		document.getElementById("2").src =
-			'/static/experiments/columbia_card_task_cold/images/loss.png';
+			'images/loss.png';
 
 		for (i = 0; i < tempArray.length; i++) {
 			document.getElementById("" + tempArray[i] + "").src =
-				'/static/experiments/columbia_card_task_cold/images/chosen.png';
+				'images/chosen.png';
 		}
 	}
 
@@ -227,7 +227,7 @@ var chooseButton = function(clicked_id) {
 var instructButton = function(clicked_id) {
 	currID = parseInt(clicked_id)
 	document.getElementById(clicked_id).src =
-		'/static/experiments/columbia_card_task_cold/images/chosen.png';
+		'images/chosen.png';
 }
 
 // appends text to be presented in the game
@@ -387,15 +387,15 @@ var instructions_block = {
 	
     '<div class = centerbox><p class = block-text><strong>Unknown Cards:</strong>'+
     '<p> This is what unknown cards looks like.  Turn it over by clicking on it.</p>'+
-    "<p><input type='image' id = '133' src='/static/experiments/columbia_card_task_cold/images/beforeChosen.png' onclick = instructButton(this.id)>"+
+    "<p><input type='image' id = '133' src='images/beforeChosen.png' onclick = instructButton(this.id)>"+
 	'</p></div>',
 	
 	'<div class = centerbox><p class = block-text>'+
 	'<p><strong>The Gain Card:</strong></p>'+
 	'<p>For every gain card you turn over, your score increases by either 10 or 30 points in different rounds.</p>'+
-	"<p><input type='image' src='/static/experiments/columbia_card_task_cold/images/chosen.png'>"+
+	"<p><input type='image' src='images/chosen.png'>"+
 	'<p><strong>The Loss Card:</strong></p>'+
-	"<p><input type='image' src='/static/experiments/columbia_card_task_cold/images/loss.png'></p>"+
+	"<p><input type='image' src='images/loss.png'></p>"+
 	'<p>For every loss card you turn over, your score decreases by either 250 or 750 points in different rounds. Furthermore, the round immediately ends (you cannot turn over any more cards). There will be either 1 or 3 loss cards in any given round.</p>'+
 	'<p>The number of loss cards and the value of points that can be won or lost by turning over a gain or loss card are fixed in each round. This information will always be on display so you know what kind of round you are in.</p>'+
 	'</p></div>',

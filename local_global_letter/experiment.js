@@ -137,7 +137,7 @@ var choices = [72, 83]
 var task_colors = jsPsych.randomization.shuffle(['blue', 'black'])
 var global_shapes = ['s','h', 'o']
 var local_shapes = ['s','h','o']
-var path = '/static/experiments/local_global_letter/images/'
+var path = 'images/'
 var prefix = '<div class = centerbox><img src = "'
 var postfix = '"</img></div>'
 var stim = []
@@ -244,7 +244,7 @@ var instructions_block = {
     trial_id: "instruction"
   },
   pages: [
-    '<div class = centerbox><p class = block-text>In this experiment you will see blue or black letters made up of smaller letters, like the image below. All of the smaller letters will always be the same letter.</p><div class = instructionImgBox><img src = "/static/experiments/local_global_letter/images/blue_s_of_o.png" height = 200 width = 200></img></div></div>',
+    '<div class = centerbox><p class = block-text>In this experiment you will see blue or black letters made up of smaller letters, like the image below. All of the smaller letters will always be the same letter.</p><div class = instructionImgBox><img src = "images/blue_s_of_o.png" height = 200 width = 200></img></div></div>',
     '<div class = centerbox><p class = block-text>Your task is to indicate whether the larger or smaller letters is an "H" or "S", depending on the color. If the letter is ' +
     task_colors[0] + ' indicate whether the larger letter is an "H" or "S". If the letter is ' +
     task_colors[1] +
@@ -253,7 +253,7 @@ var instructions_block = {
     task_colors[1] +
     ' which means you should respond based on the smaller shapes. If the shape was instead ' +
     task_colors[0] +
-    ' you would press "H".</p><div class = instructionImgBox><img src = "/static/experiments/local_global_letter/images/' +
+    ' you would press "H".</p><div class = instructionImgBox><img src = "images/' +
     task_colors[1] + '_h_of_s.png" height = 200 width = 200></img></div></div>'
   ],
   allow_keys: false,

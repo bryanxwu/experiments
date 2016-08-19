@@ -163,7 +163,7 @@ var curr_data = {
     choice2_correct_response: ''
   }
   //stim variables
-var path_source = '/static/experiments/psychological_refractory_period_two_choices/images/'
+var path_source = 'images/'
 var stim_prefix = '<div class = prp_centerbox><div class = prp_stimBox><img class = prpStim src ='
   // border color relates to the go-nogo task. The subject should GO to the first two borders in the following array:
 var borders = jsPsych.randomization.shuffle([['2_border.png', 'blue'],

@@ -165,7 +165,7 @@ var stim_htmls = [] //array of stim html
 var stims = [] //array of stim objects
 var dims = ['color', 'shape', 'pattern']
 var features = stim_att.color.concat(stim_att.shape).concat(stim_att.pattern)
-var path_source = '/static/experiments/shift_task/images/'
+var path_source = 'images/'
 var rewarded_dim = randomDraw(dims)
 var rewarded_feature = randomDraw(stim_att[rewarded_dim])
 

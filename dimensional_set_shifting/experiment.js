@@ -85,7 +85,7 @@ var stages = ['simple', 'simple_rev', 'separate', 'compound', 'compound_rev', 'I
 ]
 
 // Set up variables for stimuli
-var path = '/static/experiments/dimensional_set_shifting/images/'
+var path = 'images/'
 var center_prefix = '<div class = centerimg><img style="height: 80%; width: auto; '
 var left_prefix = '<div class = leftimg><img style="height: 80%; width: auto; '
 var right_prefix = '<div class = rightimg><img style="height: 80%; width: auto; '

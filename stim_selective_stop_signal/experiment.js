@@ -242,7 +242,7 @@ var credit_var = true
 
 // task specific variables
 // Define and load images
-var prefix = '/static/experiments/stim_selective_stop_signal/images/'
+var prefix = 'images/'
 var images = [prefix + 'rectangle.png', prefix + 'oval.png', prefix + 'trapezoid.png', prefix +
   'moon.png'
 ]

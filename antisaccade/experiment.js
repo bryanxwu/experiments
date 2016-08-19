@@ -52,7 +52,7 @@ var prompt_text = '<ul list-text><li>Square:  ' + correct_responses[0][0] + '</l
   correct_responses[1][0] + ' </li><li>Triangle:  ' + correct_responses[2][0] +
   ' </li><li>Diamond:  ' + correct_responses[3][0] + ' </li></ul>'
 
-var path = '/static/experiments/antisaccade/images/'
+var path = 'images/'
 var cue_img = path + 'square.png'
 var mask_img = path + 'mask.png'
 var left_arrow = path + 'left_arrow.png'

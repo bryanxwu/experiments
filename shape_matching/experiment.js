@@ -108,7 +108,7 @@ var credit_var = 0
 // task specific variables
 // Set up variables for stimuli
 var colors = ['white','red','green']
-var path = '/static/experiments/shape_matching/images/'
+var path = 'images/'
 var center_prefix = '<div class = centerimg><img src = "'
 var mask_prefix = '<div class = "centerimg mask"><img src = "'
 var postfix = '"</img></div>'
